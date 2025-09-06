@@ -18,6 +18,10 @@ header {
   color: #fff;
   padding: 20px;
   text-align: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
 }
 
 header h1 {
@@ -38,7 +42,7 @@ nav a {
   font-size: 1rem;
   padding: 8px 15px;
   border-radius: 6px;
-  transition: background 0.3s ease;
+  transition: background 0.3s linear;
 }
 
 nav a:hover {
@@ -59,7 +63,36 @@ section h2 {
   color: #0073e6;
 }
 
+/* Home */
+.home{
+  margin-top: 7rem;
+}
+
+.home div{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.home div span{
+  margin-left: 5rem;
+  margin-top: 2rem;
+}
+
+.home div p{
+  font-style: italic;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.1rem;
+  font-weight: 400;
+  width: 30rem;
+}
+
+.home div img{
+  width: 16rem;
+  height:16rem;
+  border-radius: 10rem;
+}
 /* About */
+
 .abt p {
   margin-bottom: 15px;
   text-align: justify;
@@ -76,17 +109,27 @@ section h2 {
   background: #fff;
   padding: 20px;
   border-radius: 10px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s;
 }
 
 .skill div:hover {
-  transform: translateY(-5px);
+  transform: scale(1.02);
 }
 
 .skill h4 {
   margin-bottom: 10px;
   color: #0073e6;
+  display: block;
+}
+
+.skill .hrdskl{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.skill .hrdskl .card{
+  margin: 1rem;
 }
 
 /* Projects */
@@ -95,7 +138,7 @@ section h2 {
   padding: 20px;
   margin-bottom: 20px;
   border-radius: 10px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
   transition: transform 0.2s;
 }
 
@@ -107,6 +150,7 @@ section h2 {
   margin-bottom: 10px;
   color: #0073e6;
 }
+
 
 /* Footer */
 footer {
@@ -159,6 +203,10 @@ footer i:hover {
 @media (max-width: 480px) {
   header h1 {
     font-size: 1.2rem;
+  }
+
+  .home{
+    margin-top: 7rem;
   }
 
   nav {
