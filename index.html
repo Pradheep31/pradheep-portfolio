@@ -14,16 +14,19 @@
 </head>
 
 <body>
-    <header>
-        <h1>Pradheep G</h1>
-        <nav class="nav" id="nav">
-            <a href="#home">Home</a>
-            <a href="#abt">About</a>
-            <a href="#skill">Skills</a>
-            <a href="#proj">Project</a>
-            <a href="#cont">Contact</a>
-        </nav>
+    <header class="site-header">
+        <div class="container">
+            <h1 class="logo">Pradheep<span> G</span></h1>
+            <nav class="navbar">
+                <a href="#home">Home</a>
+                <a href="#abt">About</a>
+                <a href="#skill">Skills</a>
+                <a href="#proj">Projects</a>
+                <a href="#cont">Contact</a>
+            </nav>
+        </div>
     </header>
+
     <section class="home" id="home">
         <h2>Home</h2>
         <div>
@@ -33,8 +36,8 @@
                 <p>"Big goals are achieved by small, consistent steps — just like a website is built line by line."</p>
             </span>
         </div>
-
     </section>
+
     <section class="abt" id="abt">
         <h2>About</h2>
         <p>Hi, I'm Pradheep G, an aspiring web developer with a passion for building beautiful, responsive, and
@@ -49,82 +52,89 @@
             also take time to refresh my mind by going for walks, listening to music, or simply reflecting to recharge
             and stay focused.</p>
     </section>
+
     <section class="skill" id="skill">
-        <h2>Skills</h2>/*need to change the skill sections*/
-        <div class="sftskl" style="width: 60rem;">
-        <div >
+        <h2>Skills</h2>
+
+        <!-- Soft Skills -->
+        <div style="margin-bottom: 3rem;">
             <h4>Soft Skills</h4>
-            <span class="hrdskl" style="width: 60rem;">
-                <div class="card" style="width: 18rem;">
-                    <!-- <img src="..." class="card-img-top" alt="..."> -->
-                        <h5 class="card-title">Communication</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of</p>
+            <span class="sftskl" style="width: 65rem; display: flex; gap: 1rem; flex-wrap: wrap;padding:2rem ">
+                
+                <div class="card" style="width: 17rem; text-align:center; padding:1rem ;">
+                    <i class="fa-solid fa-comments fa-2x"></i>
+                    <h5 class="card-title">Communication</h5>
+                    <p class="card-text">Effectively express ideas and listen actively to others.</p>
                 </div>
 
-                <div class="card" style="width: 18rem;">
-                    <img src="..." class="card-img-top" alt="...">
-                        <h5 class="card-title">Teamwork</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of</p>
+                <div class="card" style="width: 17rem; text-align:center; padding:1rem;">
+                    <i class="fa-solid fa-people-group fa-2x"></i>
+                    <h5 class="card-title">Teamwork</h5>
+                    <p class="card-text">Collaborating and contributing in team environments.</p>
                 </div>
 
-                <div class="card" style="width: 18rem;">
-                    <img src="..." class="card-img-top" alt="...">
-                        <h5 class="card-title">Problem-solving</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk</p>
+                <div class="card" style="width: 17rem; text-align:center; padding:1rem;">
+                    <i class="fa-solid fa-repeat fa-2x"></i>
+                    <h5 class="card-title">Consistency</h5>
+                    <p class="card-text">Maintaining focus and delivering with reliability.</p>
                 </div>
 
-                <div class="card" style="width: 18rem;">
-                    <img src="..." class="card-img-top" alt="...">
-                        <h5 class="card-title">consistency</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the</p>
+                <div class="card" style="width: 17rem; text-align:center; padding:1rem;">
+                    <i class="fa-solid fa-lightbulb fa-2x"></i>
+                    <h5 class="card-title">Problem-solving</h5>
+                    <p class="card-text">Finding creative and effective solutions to challenges.</p>
                 </div>
 
-                <div class="card" style="width: 18rem;">
-                    <img src="..." class="card-img-top" alt="...">
-                        <h5 class="card-title">Time Management</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up</p>
+                <div class="card" style="width: 17rem; text-align:center; padding:1rem;">
+                    <i class="fa-solid fa-clock fa-2x"></i>
+                    <h5 class="card-title">Time Management</h5>
+                    <p class="card-text">Organizing tasks and meeting deadlines efficiently.</p>
                 </div>
             </span>
         </div>
-        <div >
+
+        <!-- Hard Skills -->
+        <div>
             <h4>Hard Skills</h4>
-            <span class="hrdskl" style="width: 60rem;">
-                <div class="card" style="width: 18rem;">
-                    <!-- <img src="..." class="card-img-top" alt="..."> -->
-                        <h5 class="card-title">Html</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of</p>
+            <span class="hrdskl" style="width: 65rem; display: flex; gap: 1rem; flex-wrap: wrap;padding:2rem">
+                
+                <div class="card" style="width: 17rem; text-align:center; padding:1rem;">
+                    <i class="fa-brands fa-html5 fa-2x" style="color:#E34F26;"></i>
+                    <h5 class="card-title">HTML</h5>
+                    <p class="card-text">Structuring the web with semantic markup.</p>
                 </div>
 
-                <div class="card" style="width: 18rem;">
-                    <img src="..." class="card-img-top" alt="...">
-                        <h5 class="card-title">Css</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of</p>
+                <div class="card" style="width: 17rem; text-align:center; padding:1rem;">
+                    <i class="fa-brands fa-css3-alt fa-2x" style="color:#1572B6;"></i>
+                    <h5 class="card-title">CSS</h5>
+                    <p class="card-text">Designing responsive and styled layouts.</p>
                 </div>
 
-                <div class="card" style="width: 18rem;">
-                    <img src="..." class="card-img-top" alt="...">
-                        <h5 class="card-title">JavaScript</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk</p>
+                <div class="card" style="width: 17rem; text-align:center; padding:1rem;">
+                    <i class="fa-brands fa-js fa-2x" style="color:#F7DF1E;"></i>
+                    <h5 class="card-title">JavaScript</h5>
+                    <p class="card-text">Adding interactivity and dynamic behavior.</p>
                 </div>
 
-                <div class="card" style="width: 18rem;">
-                    <img src="..." class="card-img-top" alt="...">
-                        <h5 class="card-title">Bootstrap</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the</p>
+                <div class="card" style="width: 17rem; text-align:center; padding:1rem;">
+                    <i class="fa-brands fa-bootstrap fa-2x" style="color:#7952B3;"></i>
+                    <h5 class="card-title">Bootstrap</h5>
+                    <p class="card-text">Using responsive design framework effectively.</p>
                 </div>
 
-                <div class="card" style="width: 18rem;">
-                    <img src="..." class="card-img-top" alt="...">
-                        <h5 class="card-title">Java</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up</p>
+                <div class="card" style="width: 17rem; text-align:center; padding:1rem;">
+                    <i class="fa-brands fa-java fa-2x" style="color:#007396;"></i>
+                    <h5 class="card-title">Java</h5>
+                    <p class="card-text">Programming with OOP and backend logic.</p>
                 </div>
             </span>
         </div>
     </section>
+
     <section class="proj" id="proj">
         <h2>Projects</h2>
         <div class="card" style="width: 60rem;">
-            <img src="./Strikingly_Clone.png" class="card-img-top" alt="...">
+            <img src="./Movie_Website.png" class="card-img-top" alt="...">
             <div class="card-body">
                 <h5 class="card-title">Thiraipadam - Movie Platform (Group Project)</h5>
                 <p class="card-text">Thiraipadam is a collaborative project where we built a movie-watching platform
@@ -149,6 +159,7 @@
             </div>
         </div>
     </section>
+
     <footer class="cont" id="cont">
         <h2>Contact</h2>
         <a href="https://www.linkedin.com/in/pradheep-g-5b26162a4/" target="_blank">
@@ -160,7 +171,6 @@
         <a href="mailto:pugazhpradheep@gmail.com">
             <i class="fa-solid fa-envelope"></i>
         </a>
-
     </footer>
 </body>
 
